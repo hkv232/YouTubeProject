@@ -1,0 +1,204 @@
+.header{
+  height: 60px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: white;
+  border-bottom-width: 1;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(240,240,240);
+  z-index: 20;
+
+}
+
+
+
+.midsection{
+  flex: 1;
+  margin-left: 75px;
+  margin-right: 45px;
+  max-width: 750px;
+  display: flex;
+  align-items: center;
+
+}
+
+
+.rightsection{
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.upload-icon{
+  height: 25px;
+  cursor: pointer;
+}
+
+.yt-apps-icon{
+  height: 25px;
+  cursor: pointer;
+}
+
+.notif-icon{
+  height: 25px;
+  cursor: pointer;
+}
+
+.notif-icon-container{
+  position: relative;
+}
+
+.notifications-count{
+  position: absolute;
+  background-color: rgb(203, 3, 0);
+  margin-top: .5px;
+  padding: .5px 4px;
+  top: 0px;
+  right: -2px;
+  align-items: center;
+  color: white;
+  font-size: 11px;
+  border-radius: 20px;
+  border: 1px solid white;
+
+
+
+}
+
+.default-icon{
+  height: 30px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.ham-menu {
+  height: 25px;
+  margin: 0 25px;
+}
+
+.yt-logo{
+  height: 20px;
+}
+
+.leftsection{
+  display: flex;
+  align-items: center;
+
+}
+
+.search-button{
+  height: 40px;
+  width: 65px;
+  background-color: rgb(249, 249, 249);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  margin-left: -1px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.search-button, 
+.voice-search-button,
+.upload-icon-container,
+.yt-apps-container,
+.notif-icon-container{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+
+.voice-search-button{
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(251, 251, 251);
+  cursor: pointer;
+
+
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.yt-apps-container .tooltip,
+.notif-icon-container .tooltip{
+  position: absolute;
+  background-color: rgb(101, 101, 101);
+  color: white;
+  padding: 5px 11px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity .15s;
+  pointer-events: none;
+  white-space: nowrap;
+
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.yt-apps-container:hover .tooltip,
+.notif-icon-container:hover .tooltip{
+  opacity: .9;
+
+}
+
+.voice-search-icon{
+  height: 25px;
+}
+
+
+
+/* setting flex to 1 will allow it take up the width needed 
+as long as it fits in the container width 
+
+dont put the padding in the class specific to 
+placeholder text
+
+*/
+.search-bar{
+  height: 36px; 
+  width: 0px;
+  flex: 1;
+  padding-left: 10px;
+  font-size: 16px;
+  border-radius: 2px;
+  border: 1px solid rgb(192, 192, 192);
+  box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+  /* 
+    inset puts shadow on the inside of border
+    notation puts the shadow 
+    1px right 2 px down 3px size blur
+    black color with .05 opacity
+  */
+
+}
+
+ /*  :: -> targets a specific part within the whole 
+  element. this is another type of psuedo class */
+
+.search-bar::placeholder{
+  font-size: 16px;
+
+}
+
+.search-icon{
+  height: 25px;
+  margin-top: 4px;
+
+
+}
+
